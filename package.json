@@ -1,0 +1,23 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elisaveta-N/TRPP_FinalProject.git"
+  },
+  "author": "Kopylova K., Nickonova E.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elisaveta-N/TRPP_FinalProject/issues"
+  },
+  "homepage": "https://github.com/Elisaveta-N/TRPP_FinalProject#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "gulp": "^4.0.2"
+  }
+}
