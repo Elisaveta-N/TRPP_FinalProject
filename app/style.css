@@ -246,9 +246,10 @@ body{
     box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
 }
 
-#product .pro img{
-    width: 100%;
+#product1 .pro img{
     border-radius: 20px;
+    height:200px;
+    width:160px;
 }
 
 #product1 .pro .des{
@@ -613,5 +614,59 @@ footer .copyright{
     #newsletter{
         width: 70%;
     }
+
+}
+
+@media (max-width:447px){
+    #header{
+        padding: 10px 30px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size: 32px;
+    }
+    #hero{
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #feature{
+        justify-content: space-between;
+    }
+    #feature .fe-box{
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #product1 .pro{
+        width: 100%;
+    }
+    #banner{
+        height: 40vh;
+    }
+    #sm-banner .banner-box{
+        height: 40vh;
+    }
+    #sm-banner .banner-box2{
+        margin-top: 20px;
+    }
+    #banner3{
+        padding: 0 20px;
+    }
+    #banner .banner-box{
+        width: 100%;
+    }
+    #newsleter{
+        padding: 40px 20px;
+    }
+    #newsletter .form{
+        width: 100%;
+    }
+    footer .copyright{
+        text-align: start;
+    }
+
+
+
 
 }
