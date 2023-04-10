@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.svg " width="180vw" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Главная</a></li>
+                <li><a class="active" href="shop.html">Каталог</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class=" fa fa fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/products/p15.jpg" width="100%" id="MainImg" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/p15_1.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/p15_2.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/p15.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/p15_3.jpg" width="100%" class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="single-pro-details">
+            <h6>Лето/Весна</h6>
+            <h4>Черный свободный свитшот</h4>
+            <h2>600p</h2>
+            <select>
+                <option>Размер</option>
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+            <input type="number" value="1">
+            <button>В корзину</button>
+            <h4>Описание</h4>
+            <span><p></p></span>
+            <span><p></p></span>
+            <span><p></p></span>
+            <span><p></p></span>
+        </div>
+    </section>
+
+
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <!--<img class="logo" src="img/logo.jpg">-->
+            <h4>Контакты</h4>
+            <p><strong>Адрес:</strong> Проспект Вернадского, 78, Москва</p>
+            <p><strong>Телефон:</strong> +7 977 299 74 35</p>
+            <p><strong>Часы работы:</strong> 10:00 - 18:00, Пн - Пт</p>
+            <div class="follow">
+                <h4>Мы в соцсетях</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>О нас</h4>
+            <a href="#">О нас</a>
+            <a href="#">Доставка</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия</a>
+            <a href="#">Свяжитесь с нами</a>
+        </div>
+
+        <div class="col">
+            <h4>Мой аккаунт</h4>
+            <a href="#">Вход</a>
+            <a href="#">Корзина</a>
+            <a href="#">Нравится</a>
+            <a href="#">Отследить заказ</a>
+            <a href="#">Помощь</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2023, Kopylova & Nickonova</p>
+        </div>
+    </footer>
+
+
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallImg=document.getElementsByClassName("small-img");
+
+        smallImg[0].onclick=function(){
+            MainImg.src=smallImg[0].src;
+        }
+        smallImg[1].onclick=function(){
+            MainImg.src=smallImg[1].src;
+        }
+        smallImg[2].onclick=function(){
+            MainImg.src=smallImg[2].src;
+        }
+        smallImg[3].onclick=function(){
+            MainImg.src=smallImg[3].src;
+        }
+
+
+    </script>
+
+
+    <script src="https://kit.fontawesome.com/1893cfa3bd.js" crossorigin="anonymous"></script>
+    <script src="app.min.js"></script>
+</body>
+</html>
