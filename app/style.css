@@ -628,6 +628,147 @@ footer .copyright{
 
 
 
+/*Cart Page*/
+#page-header-cart{
+    background-image: url("img/banner/banner_2.svg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+
+#page-header-cart h2,
+#page-header-cart p{
+    color: rgb(255, 255, 255);
+}
+
+#cart{
+    overflow-x:auto ;
+}
+
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img{
+    width: 70px;
+}
+
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead{
+    border:1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+
+#cart table tbody td{
+    font-size: 15px;
+}
+
+#cupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#cupon h3,
+#subtotal{
+    padding-bottom: 15px;
+}
+
+#cart-add{
+    display: flex;
+}
+
+#cupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #088178;
+}
+
+#cupon button,
+#subtotal button{
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -792,5 +933,22 @@ footer .copyright{
         width: 90vw;
     }
 
+    /*Cart Page*/
+    #cart-add{
+        flex-direction: column;
+        align-items: center;
+    }
+    #cart{
+        padding-left: 0;
+    }
+    #cupon{
+        width: 90vw;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    #subtotal{
+        width: 90vw;
+        padding: 20px;
+    }
 
 }

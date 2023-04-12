@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+
+
+    <section id="header">
+        <a href="#"><img src="img/logo.svg " width="180vw" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="shop.html">Каталог</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa fa fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class=" fa fa fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+
+    <section id="page-header-cart">
+        <h2>#Прислушайся к себе</h2>
+        <p>Нежные образы и отличное настроение с YourFeel</p>
+    </section>
+
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Удалить</td>
+                    <td>Изображение</td>
+                    <td>Продукт</td>
+                    <td>Цена</td>
+                    <td>Количество</td>
+                    <td>Сумма</td>
+                </tr>
+            </thead>    
+            <tbody>
+                <tr>
+                    <td><a href="#"></a><i class="far fa fa-times-circle"></i></td>
+                    <td><img src="img/products/p1.jpg" alt=""></td>
+                    <td>Светло-зеленые джинсовые шорты</td>
+                    <td>800p</td>
+                    <td><input type="number" value="1"></td>
+                    <td>800p</td>
+                </tr>
+                <tr>
+                    <td><a href="#"></a><i class="far fa fa-times-circle"></i></td>
+                    <td><img src="img/products/p12.jpg" alt=""></td>
+                    <td>Голубой укороченный свитер</td>
+                    <td>899р</td>
+                    <td><input type="number" value="1"></td>
+                    <td>899р</td>
+                </tr>
+                <tr>
+                    <td><a href="#"></a><i class="far fa fa-times-circle"></i></td>
+                    <td><img src="img/products/p9.jpg" alt=""></td>
+                    <td>Зеленая куртка-бомбер</td>
+                    <td>1200р</td>
+                    <td><input type="number" value="1"></td>
+                    <td>1200р</td>
+                </tr>
+                <tr>
+                    <td><a href="#"></a><i class="far fa fa-times-circle"></i></td>
+                    <td><img src="img/products/p7.jpg" alt=""></td>
+                    <td>Розовое худи оверсайз</td>
+                    <td>1800р</td>
+                    <td><input type="number" value="1"></td>
+                    <td>1800р</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="cart-add" class="section-p1">
+        <div id="cupon">
+            <h3>Использовать промокод</h3>
+            <div>
+                <input type="text" placeholder="Введите промокод">
+                <button class="normal">Применить</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>К оплате:</h3>
+            <table>
+                <tr>
+                    <td>Сумма</td>
+                    <td>4699p</td>
+                </tr>
+                <tr>
+                    <td>Доставка</td>
+                    <td>Бесплатно</td>
+                </tr>
+                <tr>
+                    <td><strong>Итог</strong></td>
+                    <td><strong>4699p</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Перейти к оформлению</button>
+        </div>
+    </section>
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <!--<img class="logo" src="img/logo.jpg">-->
+            <h4>Контакты</h4>
+            <p><strong>Адрес:</strong> Проспект Вернадского, 78, Москва</p>
+            <p><strong>Телефон:</strong> +7 977 299 74 35</p>
+            <p><strong>Часы работы:</strong> 10:00 - 18:00, Пн - Пт</p>
+            <div class="follow">
+                <h4>Мы в соцсетях</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>О нас</h4>
+            <a href="#">О нас</a>
+            <a href="#">Доставка</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Условия</a>
+            <a href="#">Свяжитесь с нами</a>
+        </div>
+
+        <div class="col">
+            <h4>Мой аккаунт</h4>
+            <a href="#">Вход</a>
+            <a href="#">Корзина</a>
+            <a href="#">Нравится</a>
+            <a href="#">Отследить заказ</a>
+            <a href="#">Помощь</a>
+        </div>
+
+        <div class="copyright">
+            <p>© 2023, Kopylova & Nickonova</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/1893cfa3bd.js" crossorigin="anonymous"></script>
+    <script src="app.min.js"></script>
+</body>
+</html>
