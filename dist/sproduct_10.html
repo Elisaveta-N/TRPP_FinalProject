@@ -45,7 +45,8 @@
             </div>
         </div>
         
-        <div class="single-pro-details">
+        <div class="products">
+        <div class="single-pro-details product" data-name="Черная куртка-ветровка" data-price="1500" data-id="9">
             <h6>Лето/Весна</h6>
             <h4>Черная куртка-ветровка</h4>
             <h2>1500p</h2>
@@ -57,7 +58,7 @@
                 <option>L</option>
                 <option>XL</option>
             </select>
-            <input type="number" value="1">
+            <input class="count" type="number" value="1">
             <button>В корзину</button>
             <h4>Описание</h4>
             <span><p>Куртка-бомбер актуального чёрного цвета создана для крутых образов в урбанистическом стиле.</p></span>
@@ -65,9 +66,36 @@
             <span><p>Модель выполнена из ветрозащитной ткани с флисовой подкладкой. Стильная куртка согреет в прохладную погоду.</p></span>
             <span><p>Детали: свободный крой oversize, серый меланжевый капюшон из трикотажа, застёжка на молнию, длинные рукава, манжеты и низ из рельефной трикотажной резинки, два кармана.</p></span>
         </div>
+    </div>
     </section>
 
-
+    <div class="row">
+        <div class="inv">
+            <div class="cart">
+                <h1>Cart items</h1>
+                <div class="row">
+                    <div class="medium-6 columns">
+                        <button class="tiny secondary" id="clear">Clear the cart</button>
+                    </div>
+                    <div class="medium-6 columns">
+                        <button class="tiny disabled" title="Work in progress">Checkout</button>
+                    </div>
+                </div>
+                <div id="cartItems">Loading cart...</div>
+                Total price: <strong id="totalPrice">0 $</strong>
+            </div>
+        </div>
+    </div>
+    <script type="text/template" id="cartT">
+      <% _.each(items, function (item) { %> <div class = "panel"> <h3> <%= item.name %> </h3>  <span class="label">
+    <%= item.count %> piece<% if(item.count > 1)
+    {%>s
+    <%}%> for <%= item.total %>$</span > </div>
+    <% }); %>
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
+    <script  src="./js/script.js"></script>
 
 
     <footer class="section-p1">

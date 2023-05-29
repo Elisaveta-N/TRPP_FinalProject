@@ -26,6 +26,7 @@
         </div>
     </section>
 
+
     <section id="prodetails" class="section-p1">
         <div class="single-pro-image">
             <img src="img/products/p1.jpg" width="100%" id="MainImg" alt="">
@@ -44,8 +45,8 @@
                 </div>
             </div>
         </div>
-        
-        <div class="single-pro-details">
+        <div class="products">
+        <div class="product single-pro-details" data-name="Светло-зеленые джинсовые шорты" data-price="800" data-id="0">
             <h6>Лето/Весна</h6>
             <h4>Светло-зеленые джинсовые шорты</h4>
             <h2>800р</h2>
@@ -57,18 +58,44 @@
                 <option>L</option>
                 <option>XL</option>
             </select>
-            <input type="number" value="1">
-            <button>В корзину</button>
+            <input type="number" class="count" value="1">
+            <button class="tiny">В корзину</button>
             <h4>Описание</h4>
             <span><p>Подчеркнут ноги и визуально вытянут силуэт! Джинсовые шорты оттенка голубого неба станут стильным выбором на каждый день.</p></span>
             <span><p>Шорты с необработанным краем созданы для непринуждённых летних образов. Фасон New Mom с высокой посадкой визуально вытягивает силуэт и акцентирует талию и ноги. Носите их с майками и кроп-топами в знойную погоду или лонгсливами и лёгкими свитшотами — прохладными летними вечерами.</p></span>
             <span><p>Изделие выполнено из хлопкового денима. Модель с полностью натуральным составом позволяет коже дышать — идеально для чувствительной кожи.</p></span>
             <span><p>Детали кроя: застёжка на пуговицу и молнию, шлёвки для ремня, прорезные и накладные карманы, необработанные края.</p></span>
         </div>
+        </div>
     </section>
 
-
-
+    <div class="row">
+        <div class="inv">
+            <div class="cart">
+                <h1>Cart items</h1>
+                <div class="row">
+                    <div class="medium-6 columns">
+                        <button class="tiny secondary" id="clear">Clear the cart</button>
+                    </div>
+                    <div class="medium-6 columns">
+                        <button class="tiny disabled" title="Work in progress">Checkout</button>
+                    </div>
+                </div>
+                <div id="cartItems">Loading cart...</div>
+                Total price: <strong id="totalPrice">0 $</strong>
+            </div>
+        </div>
+    </div>
+    <script type="text/template" id="cartT">
+      <% _.each(items, function (item) { %> <div class = "panel"> <h3> <%= item.name %> </h3>  <span class="label">
+    <%= item.count %> piece<% if(item.count > 1)
+    {%>s
+    <%}%> for <%= item.total %>$</span > </div>
+    <% }); %>
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js'></script>
+    <script  src="./js/script.js"></script>
 
     <footer class="section-p1">
         <div class="col">
