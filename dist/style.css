@@ -712,12 +712,14 @@ footer .copyright{
 
 #cupon{
     width: 50%;
-    margin-bottom: 30px;
 }
 
-#cupon h3,
+#cupon h3 {
+    margin-top: 10px;
+}
 #subtotal{
     padding-bottom: 15px;
+    margin: 20px;
 }
 
 #cart-add{
@@ -737,6 +739,7 @@ footer .copyright{
     background-color: #088178;
     color: #fff;
     padding: 12px 20px;
+    margin: 8px;
 }
 
 #subtotal{
@@ -1100,4 +1103,7 @@ footer .copyright{
 
 .inv {
     display: none;
+}
+.row {
+    display: inline;
 }
